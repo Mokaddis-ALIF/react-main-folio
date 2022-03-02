@@ -36,6 +36,22 @@
 	margin-bottom: 0.8rem;
 }
 
+.project-tags {
+	display: flex;
+	width: 100%;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+.tag {
+	background: #4db5ff;
+
+	font-size: 14px;
+	padding: 4px 4px;
+	border-radius: 4px;
+	margin-right: 4px;
+	margin-bottom: 2px;
+}
+
 /*------Media queries (MD devices)------*/
 @media screen and (max-width: 1024px) {
 	.portfolio__container {
@@ -49,5 +65,21 @@
 	.portfolio__container {
 		grid-template-columns: 1fr;
 		gap: 1rem;
+	}
+}
+
+.swiper-container {
+	width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+	.swiper-container {
+		width: 640px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.swiper-container {
+		width: 768px;
 	}
 }

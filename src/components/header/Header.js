@@ -13,7 +13,7 @@ const Header = () => {
 				<h1>Mokaddis Borhan ALif</h1>
 				<h5 className="text-light">MERN Stack Developer</h5> */}
 
-				<span style={{ fontSize: '30px' }}>
+				<span className="typewriter">
 					<Typewriter
 						onInit={(typewriter) => {
 							typewriter

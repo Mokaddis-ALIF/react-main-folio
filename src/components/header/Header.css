@@ -63,11 +63,9 @@ header {
 	font-size: 0.9rem;
 }
 
-/*--Animation--*/
-/* .header__container .typewriter {
-	font-size: 60px;
-} */
-
+.typewriter {
+	font-size: 30px;
+}
 /*------Media queries (MD devices)------*/
 @media screen and (max-width: 1024px) {
 	header {
@@ -79,6 +77,10 @@ header {
 @media screen and (max-width: 600px) {
 	header {
 		height: 100vh;
+	}
+
+	.typewriter {
+		font-size: 18px;
 	}
 }
 
