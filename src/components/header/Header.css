@@ -18,6 +18,13 @@ header {
 	justify-content: center;
 }
 
+#cv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
 /*--Header socials--*/
 .header__social {
 	display: flex;
