@@ -11,28 +11,30 @@ const Services = () => {
 			<div className="container services__container">
 				<article className="service">
 					<div className="service__head">
-						<h3>UI design</h3>
+						<h3>Web design</h3>
 					</div>
 					<ul className="service__list">
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Create website with HTML,CSS,JavaScript</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Create websites with CSS framework</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>
+								Create static &amp; dynamic website with JavaScript &amp; React
+							</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Create website with various React framework</p>
 						</li>
 					</ul>
 				</article>
-				<article className="service">
+				{/* <article className="service">
 					<div className="service__head">
 						<h3>Web design</h3>
 					</div>
@@ -58,27 +60,27 @@ const Services = () => {
 							<p>Lorem ipsum dolor sit amet consectetur.</p>
 						</li>
 					</ul>
-				</article>
+				</article> */}
 				<article className="service">
 					<div className="service__head">
-						<h3>web development</h3>
+						<h3>Web development</h3>
 					</div>
 					<ul className="service__list">
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Create full stack website using famous MERN technology</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Frontend with React and it's framework to make it gorgeous</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Backend with Node.js &amp; Express.js</p>
 						</li>
 						<li>
 							<BiCheck className="service__list-icon" />
-							<p>Lorem ipsum dolor sit amet consectetur.</p>
+							<p>Database integration with MongoDB</p>
 						</li>
 					</ul>
 				</article>

@@ -23,7 +23,7 @@ const About = () => {
 						<article className="about__card">
 							<FaAward className="about__icon" />
 							<h5>Experience</h5>
-							<small>1+ years working </small>
+							<small>6+ months working </small>
 						</article>
 
 						<article className="about__card">
@@ -35,15 +35,17 @@ const About = () => {
 						<article className="about__card">
 							<VscFolderLibrary className="about__icon" />
 							<h5>Project</h5>
-							<small>20+ completed </small>
+							<small>15+ completed </small>
 						</article>
 					</div>
 
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-						similique nam dolor voluptatum nobis illo exercitationem laudantium
-						alias rem molestias, quaerat corrupti porro voluptate nihil ipsa, in
-						modi adipisci explicabo.
+						I've done my B.Sc in CSE. Being a CSE student I've been introduced
+						to many level languages. That's why I got to experiment a lot but
+						after learning JavaScript and exploring the web development world as
+						a MERN stack developer I’ve found the utmost joy. For more than one
+						year I’ve been gathering experience by learning and also working as
+						a MERN stack developer.
 					</p>
 					<a href="#contact" className="btn btn-primary">
 						Contact

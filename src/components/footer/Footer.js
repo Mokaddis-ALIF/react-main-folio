@@ -1,8 +1,38 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookF } from 'react-icons/fa';
-import { FiInstagram } from 'react-icons/fi';
 import { BsLinkedin } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
+import { BsFacebook } from 'react-icons/bs';
+
+const SocialData = [
+	{
+		id: 3,
+		platform: 'LinkedIn',
+		link: 'https://www.linkedin.com/in/mokaddis-borhan-alif/',
+		icon: BsLinkedin,
+	},
+	{
+		id: 5,
+		platform: 'Github',
+		link: 'https://github.com/Mokaddis-ALIF',
+		icon: FaGithub,
+	},
+	{
+		id: 2,
+		platform: 'Facebook',
+		link: 'https://www.facebook.com/mokaddis.alif/',
+		icon: BsFacebook,
+	},
+];
+
+const navLinks = [
+	{ name: 'Home', link: 'home' },
+	{ name: 'About', link: 'about' },
+	{ name: 'Experience', link: 'experience' },
+	{ name: 'Services', link: 'services' },
+	{ name: 'Portfolio', link: 'portfolio' },
+	{ name: 'Contact', link: 'contact' },
+];
 
 const Footer = () => {
 	return (
@@ -12,36 +42,19 @@ const Footer = () => {
 			</a>
 
 			<ul className="permalinks">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#experience">Experience</a>
-				</li>
-				<li>
-					<a href="#services">Services</a>
-				</li>
-				<li>
-					<a href="#portfolio">Portfolio</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
+				{navLinks.map((data, i) => (
+					<li key={i}>
+						<a href={`#${data.link}`}>{data.name}</a>
+					</li>
+				))}
 			</ul>
 
 			<div className="footer__socials">
-				<a href="">
-					<FaFacebookF />
-				</a>
-				<a href="">
-					<FiInstagram />
-				</a>
-				<a href="">
-					<BsLinkedin />
-				</a>
+				{SocialData.map((social) => (
+					<a href={social.link} target="_blank" key={social.id}>
+						<social.icon />
+					</a>
+				))}
 			</div>
 
 			<div className="footer__copyright">

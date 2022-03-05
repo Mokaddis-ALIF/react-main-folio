@@ -5,47 +5,41 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
 import { BiMessageSquareDots } from 'react-icons/bi';
+import { MdWorkspacesFilled } from 'react-icons/md';
+
+const navData = [
+	{ id: 1, href: '#', className: '#', icon: <AiOutlineHome /> },
+	{ id: 2, href: '#about', className: '#about', icon: <AiOutlineUser /> },
+	{ id: 3, href: '#experience', className: '#experience', icon: <BiBook /> },
+	{ id: 4, href: '#services', className: '#services', icon: <RiServiceLine /> },
+	{
+		id: 5,
+		href: '#portfolio',
+		className: '#portfolio',
+		icon: <MdWorkspacesFilled />,
+	},
+	{
+		id: 6,
+		href: '#contact',
+		className: '#contact',
+		icon: <BiMessageSquareDots />,
+	},
+];
 
 const Nav = () => {
 	const [activeNav, setActiveNav] = useState('#');
 
 	return (
 		<nav>
-			<a
-				href="#"
-				onClick={() => setActiveNav('#')}
-				className={activeNav === '#' ? 'active' : ''}
-			>
-				<AiOutlineHome />
-			</a>
-			<a
-				href="#about"
-				onClick={() => setActiveNav('#about')}
-				className={activeNav === '#about' ? 'active' : ''}
-			>
-				<AiOutlineUser />
-			</a>
-			<a
-				href="#experience"
-				onClick={() => setActiveNav('#experience')}
-				className={activeNav === '#experience' ? 'active' : ''}
-			>
-				<BiBook />
-			</a>
-			<a
-				href="#services"
-				onClick={() => setActiveNav('#services')}
-				className={activeNav === '#services' ? 'active' : ''}
-			>
-				<RiServiceLine />
-			</a>
-			<a
-				href="#contact"
-				onClick={() => setActiveNav('#contact')}
-				className={activeNav === '#contact' ? 'active' : ''}
-			>
-				<BiMessageSquareDots />
-			</a>
+			{navData.map((data) => (
+				<a
+					href={data.href}
+					onClick={() => setActiveNav(`${data.href}`)}
+					className={activeNav === `${data.className}` ? 'active' : ''}
+				>
+					{data.icon}
+				</a>
+			))}
 		</nav>
 	);
 };

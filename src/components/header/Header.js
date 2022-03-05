@@ -9,10 +9,6 @@ const Header = () => {
 	return (
 		<header>
 			<div className="container header__container">
-				{/* <h5>Hello I'm</h5>
-				<h1>Mokaddis Borhan ALif</h1>
-				<h5 className="text-light">MERN Stack Developer</h5> */}
-
 				<span className="typewriter">
 					<Typewriter
 						onInit={(typewriter) => {
