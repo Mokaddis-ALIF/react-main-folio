@@ -1,32 +1,30 @@
 footer {
-	/* background: var(--color-primary); */
 	padding: 3rem 0;
 	text-align: center;
 	font-size: 0.9rem;
 	margin-top: 7rem;
 
-	/* background: #007991;
-	background: -webkit-linear-gradient(
-		to right,
-		#78ffd6,
-		#007991
-	); 
-	background: linear-gradient(
-		to right,
-		#78ffd6,
-		#007991
-	);  */
-
-	background: #06beb6; /* fallback for old browsers */
+	/* background: #06beb6; 
 	background: -webkit-linear-gradient(
 		to right,
 		#48b1bf,
 		#06beb6
+	);
+	background: linear-gradient(
+		to right,
+		#48b1bf,
+		#06beb6
+	);  */
+	background: #2c3e50; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#3498db,
+		#2c3e50
 	); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(
 		to right,
-		#48b1bf,
-		#06beb6
+		#3498db,
+		#2c3e50
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
