@@ -59,6 +59,12 @@
 	border-color: transparent;
 }
 
+.swiper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /*------Media queries (MD devices)------*/
 @media screen and (max-width: 1024px) {
 	.portfolio__container {

@@ -1,7 +1,7 @@
 import React from 'react';
 import CTA from './CTA';
 import './Header.css';
-import ME from '../../assets/me.png';
+import profile from '../../assets/profile-img.png';
 import HeaderSocial from './HeaderSocial';
 // import Typewriter from 'typewriter-effect';
 import { Typewriter } from 'react-simple-typewriter';
@@ -29,7 +29,7 @@ const Header = () => {
 					/> */}
 					<Typewriter
 						words={[
-							'React Web Developer',
+							'React Developer',
 							'JavaScript Developer',
 							'MERN Stack Developer',
 						]}
@@ -46,7 +46,7 @@ const Header = () => {
 				<HeaderSocial />
 
 				<div className="me">
-					<img src={ME} alt="me" />
+					<img src={profile} alt="me" />
 				</div>
 
 				<a href="#contact" className="scroll__down">

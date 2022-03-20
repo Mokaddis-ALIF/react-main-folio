@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper';
+import { EffectCoverflow, Pagination } from 'swiper';
 
 const Portfolio = () => {
 	return (
@@ -17,7 +17,7 @@ const Portfolio = () => {
 			<h5>My Recent Work</h5>
 			<h2>Portfolio</h2>
 
-			<Swiper
+			{/* <Swiper
 				// slidesPerView={3}
 
 				breakpoints={{
@@ -38,6 +38,35 @@ const Portfolio = () => {
 				}}
 				modules={[Pagination]}
 				className="container portfolio__container"
+			> */}
+			<Swiper
+				spaceBetween={30}
+				breakpoints={{
+					// when window width is >= 640px
+					640: {
+						width: 640,
+						slidesPerView: 1,
+					},
+					// when window width is >= 768px
+					998: {
+						width: 998,
+						slidesPerView: 2,
+					},
+				}}
+				effect={'coverflow'}
+				grabCursor={true}
+				centeredSlides={true}
+				// slidesPerView={'auto'}
+				coverflowEffect={{
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows: true,
+				}}
+				pagination={true}
+				modules={[EffectCoverflow, Pagination]}
+				className="portfolio__container"
 			>
 				{ProjectsData.map((project, index) => (
 					<SwiperSlide>

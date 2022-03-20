@@ -72,7 +72,9 @@ header {
 
 .typewriter {
 	font-size: 30px;
+	color: var(--color-light);
 }
+
 /*------Media queries (MD devices)------*/
 @media screen and (max-width: 1024px) {
 	header {
