@@ -29,9 +29,9 @@ const Header = () => {
 					/> */}
 					<Typewriter
 						words={[
-							'React Developer',
-							'JavaScript Developer',
-							'MERN Stack Developer',
+							'Front-end web Developer',
+							'React.js web Developer',
+							'MERN Stack web Developer',
 						]}
 						loop
 						cursor
