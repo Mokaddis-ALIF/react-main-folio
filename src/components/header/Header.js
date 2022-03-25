@@ -1,7 +1,7 @@
 import React from 'react';
 import CTA from './CTA';
 import './Header.css';
-import profile from '../../assets/profile-img.png';
+import profile from '../../assets/Me3.png';
 import HeaderSocial from './HeaderSocial';
 // import Typewriter from 'typewriter-effect';
 import { Typewriter } from 'react-simple-typewriter';
