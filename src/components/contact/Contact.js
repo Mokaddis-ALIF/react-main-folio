@@ -1,10 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import './Contact.css';
 import { MdOutlineMail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
 	const formRef = useRef();
@@ -32,6 +34,11 @@ const Contact = () => {
 			);
 	};
 
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
 		<section id="contact">
 			<h5>Get In Touch</h5>
@@ -39,7 +46,7 @@ const Contact = () => {
 
 			<div className="container contact__container">
 				<div className="contact__options">
-					<article className="contact__option">
+					<article className="contact__option" data-aos="zoom-in-right">
 						<MdOutlineMail className="contact__option-icon" />
 						<h4>Email</h4>
 						<h5>mokaddis.alif@gmail.com</h5>
@@ -51,7 +58,7 @@ const Contact = () => {
 							Send a message
 						</a>
 					</article>
-					<article className="contact__option">
+					<article className="contact__option" data-aos="zoom-in-right">
 						<RiMessengerLine className="contact__option-icon" />
 						<h4>Messenger</h4>
 						<h5>Mokaddis Borhan Alif</h5>
@@ -63,7 +70,7 @@ const Contact = () => {
 							Send a message
 						</a>
 					</article>
-					<article className="contact__option">
+					<article className="contact__option" data-aos="zoom-in-right">
 						<BsWhatsapp className="contact__option-icon" />
 						<h4>WhatsApp</h4>
 						<h5>+8801673913970</h5>
@@ -77,7 +84,7 @@ const Contact = () => {
 					</article>
 				</div>
 
-				<form ref={formRef} onSubmit={handleSubmit}>
+				<form ref={formRef} onSubmit={handleSubmit} data-aos="zoom-in-left">
 					<input type="text" name="name" placeholder="Your full name" />
 					<input type="email" name="email" placeholder="Your email" />
 					<textarea

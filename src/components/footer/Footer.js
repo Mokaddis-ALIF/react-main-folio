@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Footer.css';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SocialData = [
 	{
@@ -35,13 +37,18 @@ const navLinks = [
 ];
 
 const Footer = () => {
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
 		<footer>
-			<a href="#" className="footer__logo">
+			<a href="#" className="footer__logo" data-aos="zoom-in-down">
 				ALIF
 			</a>
 
-			<ul className="permalinks">
+			<ul className="permalinks" data-aos="fade-right">
 				{navLinks.map((data, i) => (
 					<li key={i}>
 						<a href={`#${data.link}`}>{data.name}</a>
@@ -49,7 +56,7 @@ const Footer = () => {
 				))}
 			</ul>
 
-			<div className="footer__socials">
+			<div className="footer__socials" data-aos="zoom-in">
 				{SocialData.map((social) => (
 					<a href={social.link} target="_blank" key={social.id}>
 						<social.icon />
@@ -57,7 +64,7 @@ const Footer = () => {
 				))}
 			</div>
 
-			<div className="footer__copyright">
+			<div className="footer__copyright" data-aos="fade-left">
 				<small>&copy; Made with 🔥 by Mokaddis Borhan ALIF</small>
 			</div>
 		</footer>

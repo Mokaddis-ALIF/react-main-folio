@@ -1,32 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CTA from './CTA';
 import './Header.css';
 import profile from '../../assets/Me3.png';
 import HeaderSocial from './HeaderSocial';
-// import Typewriter from 'typewriter-effect';
 import { Typewriter } from 'react-simple-typewriter';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
 		<header>
 			<div className="container header__container">
 				<span className="typewriter">
-					{/* <Typewriter
-						onInit={(typewriter) => {
-							typewriter
-								.typeString(`Hello I'm`)
-								.pauseFor(2000)
-								.deleteAll()
-								.typeString('Mokaddis Borhan ALIF')
-								.pauseFor(1000)
-								.deleteAll()
-								.typeString('MERN Stack Developer')
-								.pauseFor(1000)
-								.deleteAll()
-								.typeString('React Web Developer')
-								.start();
-						}}
-					/> */}
 					<Typewriter
 						words={[
 							'Front-end web Developer',
@@ -45,7 +35,7 @@ const Header = () => {
 				<CTA />
 				<HeaderSocial />
 
-				<div className="me">
+				<div className="me" data-aos="fade-up">
 					<img src={profile} alt="me" />
 				</div>
 

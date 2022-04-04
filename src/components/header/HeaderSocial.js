@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SocialData = [
 	{
@@ -25,8 +27,13 @@ const SocialData = [
 ];
 
 const HeaderSocial = () => {
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
+
 	return (
-		<div className="header__social">
+		<div className="header__social" data-aos="fade-down">
 			{SocialData.map((social) => (
 				<a href={social.link} target="_blank" key={social.id} rel="noreferrer">
 					<social.icon />
