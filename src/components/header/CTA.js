@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import CV from '../../assets/CV.pdf';
+import CV from '../../assets/Mokaddis_resume.pdf';
 import { TiDownloadOutline } from 'react-icons/ti';
 import { TiMessages } from 'react-icons/ti';
 import AOS from 'aos';

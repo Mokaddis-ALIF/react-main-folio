@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './About.css';
-import profile from '../../assets/Me3.png';
+import profile from '../../assets/mypic-removebg-preview.png';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';

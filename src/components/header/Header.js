@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import CTA from './CTA';
 import './Header.css';
-import profile from '../../assets/Me3.png';
+import profile from '../../assets/mypic-removebg-preview.png';
 import HeaderSocial from './HeaderSocial';
 import { Typewriter } from 'react-simple-typewriter';
 import AOS from 'aos';
